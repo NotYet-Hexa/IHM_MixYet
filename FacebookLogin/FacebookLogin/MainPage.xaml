@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FacebookAppli"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             x:Class="FacebookLogin.MainPage"
+             Title="TEST">
+
+    <StackLayout>
+
+        <Label Text="Allez fonctionne stp"
+           Font="Large"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+        <!--<Button Text="Connecte toi avec Facebook !"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand" />-->
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+    </StackLayout>
+
+
+</ContentPage>

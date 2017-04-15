@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FacebookLogin"
+             x:Class="FacebookLogin.MusicHome">
+
+    <StackLayout >
+        <Grid HeightRequest="50" BackgroundColor="Blue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="1" Grid.Column="0" x:Name="return_im" Source="flecheGauche.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Image>
+        </Grid>
+        <Entry x:Name="search" Placeholder="Guthrie Govan"/>
+        <ListView x:Name="list" ItemTapped="OnItemTapped"  HasUnevenRows="True" CachingStrategy="RecycleElement" SeparatorVisibility="Default">
+            <BoxView BackgroundColor="Black" HeightRequest="1" WidthRequest="1000" HorizontalOptions="FillAndExpand"/>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout BackgroundColor="White"
+                Orientation="Horizontal">
+                            <Image Source="{Binding Thumbnail}"/>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Name}"
+                          TextColor="#C25800"/>
+                                <Label Text="{Binding Album}"
+                          TextColor="#AA6C39"/>
+                                <Label Text="{Binding Artiste}"
+                          TextColor="#9E7A5C" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FacebookAppli"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             x:Class="FacebookLogin.Login"
+             Title="TEST">
+    <StackLayout>
+        <Label Text="Connectez-vous à Facebook "
+               Font="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Button x:Name="buttonLogin" Text="Login Facebook" />
+    </StackLayout>
+
+</ContentPage>

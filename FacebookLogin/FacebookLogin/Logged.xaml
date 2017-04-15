@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FacebookLogin.Logged">
+
+    <StackLayout >
+        <Label Text="Vous êtes connecté !!"
+             VerticalOptions="Start"
+             HorizontalTextAlignment="Center"
+             IsVisible="true"
+             FontSize="Large"
+             FontAttributes="Bold"/>
+        <BoxView BackgroundColor="Black" HeightRequest="1" WidthRequest="1000" HorizontalOptions="FillAndExpand"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Text="{Binding Name}" HorizontalOptions="Center" TextColor="Black"/>
+            <Image Grid.Column="1" Source="{Binding UrlPicture}"/>
+        </Grid>
+        <BoxView BackgroundColor="Black" HeightRequest="1" WidthRequest="1000" HorizontalOptions="FillAndExpand"/>
+        <Label Text="{Binding Id}" HorizontalOptions="Center" TextColor="Black"/>
+        <BoxView BackgroundColor="Black" HeightRequest="1" WidthRequest="1000" HorizontalOptions="FillAndExpand"/>
+        <Label Text="{Binding Gender}" HorizontalOptions="Center" TextColor="Black"/>
+        <BoxView BackgroundColor="Black" HeightRequest="1" WidthRequest="1000" HorizontalOptions="FillAndExpand"/>
+        <Label Text="{Binding Age_Range}" HorizontalOptions="Center" TextColor="Black"/>
+        <BoxView BackgroundColor="Black" HeightRequest="1" WidthRequest="1000" HorizontalOptions="FillAndExpand"/>
+        <Label Text="{Binding Devices}" HorizontalOptions="Center" TextColor="Black"/>
+        <Button x:Name="buttonMusic" Text="Ok c'est bien moi , Suivant !" />
+    </StackLayout>
+   
+
+</ContentPage>
