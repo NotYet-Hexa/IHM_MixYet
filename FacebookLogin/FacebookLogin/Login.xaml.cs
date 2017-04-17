@@ -16,6 +16,7 @@ namespace FacebookLogin
 	{
         public bool connection = false;
         public string ClientId = "837022399788381";
+        private UsersDataAccess dataAccess;
         public Login ()
 		{
 			InitializeComponent ();
@@ -88,8 +89,13 @@ namespace FacebookLogin
             connection = true;
             var userJson =  await httpClient.GetStringAsync(requestUrl);
             FacebookProfil fbprofil = new FacebookProfil(JObject.Parse(userJson));
+
+            this.dataAccess = new UsersDataAccess();
+            User user = new User();
+            user.UserInfo(fbprofil); // Met à jour la DB profil 
+            user.Id = 1;
+            this.dataAccess.SaveCustomer(user);
             await Navigation.PushModalAsync(new Logged(fbprofil));
-            //var test = userJson.Count();
         }
     }
 }

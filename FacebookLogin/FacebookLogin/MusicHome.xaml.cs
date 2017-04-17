@@ -32,9 +32,11 @@ namespace FacebookLogin
         public async void OnItemTapped(object o, ItemTappedEventArgs e)
         {
             var dataMusic = (SpotifyTrack)e.Item;
-            var action = await DisplayActionSheet("Message","Voter", "Partager", "Infos");
+            var action = await DisplayActionSheet("Message","Voter", "Partager");
             if (action=="Voter")
             {
+                User user = new User();
+                user.ListVote.Add(dataMusic); // Met à jour la liste vote music 
                 await Navigation.PushModalAsync(new MusicInfo(dataMusic));
             }
 

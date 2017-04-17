@@ -108,5 +108,15 @@ C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin
 C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\obj\Debug\FacebookLogin.Android.csprojResolveAssemblyReference.cache
+C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\bin\Debug\SQLite-net.dll
+C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\bin\Debug\SQLitePCLRaw.lib.e_sqlite3.dll
+C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\bin\Debug\SQLite-net.xml
+C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\bin\Debug\SQLite-net.dll.mdb
+C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\obj\Debug\FacebookLogin.Droid.DisplayUserData.xaml.g.cs
+C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\obj\Debug\android\assets\SQLite-net.dll.mdb
 C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\obj\Debug\FacebookLogin.Android.dll.mdb
 C:\Users\Milly\documents\visual studio 2015\Projects\FacebookLogin\FacebookLogin\FacebookLogin.Android\bin\Debug\FacebookLogin.Android.dll.mdb

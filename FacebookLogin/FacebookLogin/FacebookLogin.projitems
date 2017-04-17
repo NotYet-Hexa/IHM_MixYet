@@ -12,8 +12,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)DisplayUserData.xaml.cs">
+      <DependentUpon>DisplayUserData.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)UsersDataAccess.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookProfil.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Geoloc.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IDatabaseConnection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Logged.xaml.cs">
       <DependentUpon>Logged.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -66,6 +72,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MusicInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)DisplayUserData.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

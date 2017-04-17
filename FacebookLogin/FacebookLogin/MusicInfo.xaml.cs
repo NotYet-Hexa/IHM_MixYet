@@ -19,7 +19,13 @@ namespace FacebookLogin
             var tapImage1 = new TapGestureRecognizer();
             tapImage1.Tapped += ToReturn;
             return_im.GestureRecognizers.Add(tapImage1);
+            var buttonData = this.FindByName<Button>("buttondata");
+            buttonData.Clicked += ButtonClicked;
+        }
 
+        public async void ButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new DisplayUserData());
         }
         async void ToReturn(object sender, EventArgs e)
 

@@ -33,9 +33,11 @@ namespace FacebookLogin
             // handle the tap  
             await DisplayAlert("Attention","Nous allons vous Géolocaliser","OK");
             Geoloc location = new Geoloc();
-            location.getLatLon();
+            await  location.getLatLon();
             var lat = location.latitude;
             var lon = location.longitude;
+            User user = new User();
+            user.UserLocation(lat, lon); // met à jour la DB Location
             AlertPositionFound(lat, lon);
         }
         public async void AlertPositionFound(string lat, string lon)

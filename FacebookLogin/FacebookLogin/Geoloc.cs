@@ -14,29 +14,30 @@ namespace FacebookLogin
 
         }
         
-        public  async Task GetPosition()
+        public  async Task GetPosition() //TODO faire une Exception propre
+            
         {
-            //try
-            //{
-            //    var locator = CrossGeolocator.Current;
-            //    locator.DesiredAccuracy = 50;
+            try
+            {
+                var locator = CrossGeolocator.Current;
+                locator.DesiredAccuracy = 50;
 
-            //    Task<Plugin.Geolocator.Abstractions.Position> position =  locator.GetPositionAsync(timeoutMilliseconds: 10000);
-            //    if (position == null)
-            //        return;
-            //    else
-            //    {
-            //        this.latitude = position.Latitude.ToString();
-            //        this.longitude = position.Longitude.ToString();
-                
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw ex;
-            //}
+                Plugin.Geolocator.Abstractions.Position position = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
+                if (position == null)
+                    return;
+                else
+                {
+                    this.latitude = position.Latitude.ToString();
+                    this.longitude = position.Longitude.ToString();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
-        public async void getLatLon()
+        public async Task getLatLon()
         {
             await GetPosition();
         }

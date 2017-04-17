@@ -51,6 +51,9 @@
             <StackLayout HeightRequest="50" Orientation="Horizontal"  BackgroundColor="Gray" Grid.Row="2">
                 <Label Text="Current Music" HorizontalOptions="Center" Font="Large"/>
             </StackLayout>
+            <StackLayout>
+                <Button x:Name="buttondata" Text="Voir donnée utilisateur" />
+            </StackLayout>
         </Grid>
     </StackLayout>
 </ContentPage>
