@@ -31,7 +31,7 @@ namespace FacebookLogin
             FaceLogin();
 
         }
-        private void FaceLogin()
+        public void FaceLogin()
         {
             var apiRequest =
                    "https://www.facebook.com/v2.8/dialog/oauth?client_id="
@@ -93,7 +93,6 @@ namespace FacebookLogin
             this.dataAccess = new UsersDataAccess();
             User user = new User();
             user.UserInfo(fbprofil); // Met à jour la DB profil 
-            user.Id = 1;
             this.dataAccess.SaveCustomer(user);
             await Navigation.PushModalAsync(new Logged(fbprofil));
         }

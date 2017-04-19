@@ -27,18 +27,18 @@ namespace FacebookLogin
             }
         }
 
-        public List<SpotifyTrack> ListVote
-        {
-            get
-            {
-                return listeVote;
-            }
-            set
-            {
-                this.listeVote = value;
-                OnPropertyChanged(nameof(ListVote));
-            }
-        }
+        //public List<SpotifyTrack> ListVote
+        //{
+        //    get
+        //    {
+        //        return listeVote;
+        //    }
+        //    set
+        //    {
+        //        this.listeVote = value;
+        //        OnPropertyChanged(nameof(ListVote));
+        //    }
+        //}
 
         public string Latitude
         {

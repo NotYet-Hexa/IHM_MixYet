@@ -11,7 +11,7 @@ namespace FacebookLogin
         private SQLiteConnection database;//stocke la chaine de connexion
 
         private static object collisionLock = new object();//crée des verrous sur les opérations de données
-        public ObservableCollection<User> user { get; set; }// expose les donnée pour XAML
+        public ObservableCollection<User> Users { get; set; }// expose les donnée pour XAML
 
         public UsersDataAccess()
         {
@@ -19,7 +19,7 @@ namespace FacebookLogin
               DependencyService.Get<IDatabaseConnection>().
               DbConnection();// Méthode générique qui retourne une implémentation en rapport avec l'OS => injection de dépendance
             database.CreateTable<User>();
-            this.user =
+            this.Users =
               new ObservableCollection<User>(database.Table<User>());
             // If the table is empty, initialize the collection
             if (!database.Table<User>().Any())
@@ -29,7 +29,7 @@ namespace FacebookLogin
         }
         public void AddNewUser()
         {
-            this.user.
+            this.Users.
               Add(new User
               {
                   Firstname = "Prénom",

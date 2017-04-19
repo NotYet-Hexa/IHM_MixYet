@@ -35,8 +35,8 @@ namespace FacebookLogin
             var action = await DisplayActionSheet("Message","Voter", "Partager");
             if (action=="Voter")
             {
-                User user = new User();
-                user.ListVote.Add(dataMusic); // Met à jour la liste vote music 
+                //User user = new User();
+                //user.ListVote.Add(dataMusic); // Met à jour la liste vote music 
                 await Navigation.PushModalAsync(new MusicInfo(dataMusic));
             }
 

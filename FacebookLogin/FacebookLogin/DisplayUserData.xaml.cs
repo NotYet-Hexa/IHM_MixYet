@@ -17,10 +17,20 @@ namespace FacebookLogin
 		{
 			InitializeComponent ();
             this.dataAccess = new UsersDataAccess();
-            User user3 = dataAccess.GetUser(1);
             var tapImage1 = new TapGestureRecognizer();
             tapImage1.Tapped += ToReturn;
             return_im.GestureRecognizers.Add(tapImage1);
+            buttonLogin.Clicked += OnButtonClicked;
+
+        }
+
+
+        void OnButtonClicked(object sender, EventArgs e)
+        {
+
+            Login log = new Login();
+            log.FaceLogin();
+
         }
         protected override void OnAppearing()
         {

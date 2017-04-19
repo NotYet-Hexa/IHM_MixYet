@@ -11,8 +11,8 @@
 namespace FacebookLogin {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Milly\\documents\\visual studio 2015\\Projects\\FacebookLogin\\FacebookLogin\\" +
-        "FacebookLogin\\DisplayUserData.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Milly\\Desktop\\IHM_MixYet\\FacebookLogin\\FacebookLogin\\DisplayUserData.xam" +
+        "l")]
     public partial class DisplayUserData : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -22,10 +22,14 @@ namespace FacebookLogin {
         private global::Xamarin.Forms.ListView CustomersView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button buttonLogin;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(DisplayUserData));
             return_im = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "return_im");
             CustomersView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "CustomersView");
+            buttonLogin = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "buttonLogin");
         }
     }
 }
