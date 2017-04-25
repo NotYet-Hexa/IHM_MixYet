@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using SQLite;
 using System.ComponentModel;
-
 namespace FacebookLogin
 {
     [Table("Users")]
@@ -26,8 +25,7 @@ namespace FacebookLogin
                 OnPropertyChanged(nameof(Id));
             }
         }
-
-        //public List<SpotifyTrack> ListVote
+        //public List<SpotifyTrack> Listvote
         //{
         //    get
         //    {
@@ -36,7 +34,7 @@ namespace FacebookLogin
         //    set
         //    {
         //        this.listeVote = value;
-        //        OnPropertyChanged(nameof(ListVote));
+        //        OnPropertyChanged(nameof(Listvote));
         //    }
         //}
 
