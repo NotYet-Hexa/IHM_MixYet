@@ -12,7 +12,7 @@ namespace FacebookLogin
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Logged : ContentPage
 	{
-
+        private UsersDataAccess dataAccess;
         public string maposition;
         public Logged (FacebookProfil fbprofil)
 		{
@@ -33,12 +33,22 @@ namespace FacebookLogin
             // handle the tap  
             await DisplayAlert("Attention","Nous allons vous Géolocaliser","OK");
             Geoloc location = new Geoloc();
-            await  location.getLatLon();
-            var lat = location.latitude;
-            var lon = location.longitude;
-            User user = new User();
-            user.UserLocation(lat, lon); // met à jour la DB Location
-            AlertPositionFound(lat, lon);
+            try
+            {
+                await location.getLatLon();
+                bool sucess = location.boSuccess;
+                var lat = location.latitude;
+                var lon = location.longitude;
+                this.dataAccess = new UsersDataAccess();
+                User user = dataAccess.GetUser(1);
+                user.UserLocation(lat, lon); 
+                this.dataAccess.SaveCustomer(user);// met à jour la DB Location
+                AlertPositionFound(lat, lon);
+            }
+            catch (Exception ex )
+            {
+                await DisplayAlert("Attention", "Nous n'avons pas pu vous Géolocaliser, veuillez verifier que vous avez bien la géolocalisation d'activée ou réssayez dans un autre endroit", "OK");
+            }
         }
         public async void AlertPositionFound(string lat, string lon)
         {

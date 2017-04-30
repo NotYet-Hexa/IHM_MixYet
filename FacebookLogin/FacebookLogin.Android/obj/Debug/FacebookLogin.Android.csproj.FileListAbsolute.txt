@@ -174,7 +174,6 @@ C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\bin\Debug\
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\FacebookLogin.Android.csprojResolveAssemblyReference.cache
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\FacebookLogin.Droid.MainPage.xaml.g.cs
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\FacebookLogin.Droid.App.xaml.g.cs
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\FacebookLogin.Droid.Login.xaml.g.cs
@@ -193,6 +192,7 @@ C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\R.cs.flag
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\uploadflags.txt
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\bin\Debug\FacebookLogin.Android.dll.mdb
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\FacebookLogin.Android.csprojResolveAssemblyReference.cache
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\bin\Debug\Java.Interop.dll.mdb
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\bin\Debug\Microsoft.CSharp.dll.mdb
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\bin\Debug\Mono.Android.dll.mdb

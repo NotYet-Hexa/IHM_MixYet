@@ -7,6 +7,7 @@ namespace FacebookLogin
     [Table("Users")]
     public  class User : INotifyPropertyChanged
     {
+        private string vote = "0";
         private string firstname,lastname,age,gender,device; // Attribut pour les infos générales
         private string latitude, longitude; // Location de l'utilisateur
         private List<SpotifyTrack> listeVote = new List<SpotifyTrack>(); // liste des votes pour éventuellement proposer de meilleures musiques
@@ -37,7 +38,20 @@ namespace FacebookLogin
         //        OnPropertyChanged(nameof(Listvote));
         //    }
         //}
-
+        
+        [NotNull]
+        public string Vote
+        {
+            get
+            {
+                return vote;
+            }
+            set
+            {
+                this.vote = value;
+                OnPropertyChanged(nameof(Vote));
+            }
+        }
         public string Latitude
         {
             get

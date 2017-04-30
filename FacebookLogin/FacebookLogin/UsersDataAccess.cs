@@ -38,7 +38,8 @@ namespace FacebookLogin
                   Gender = "Both",
                   Age = "20",
                   Latitude = "unknow",
-                  Longitude = "unknow"
+                  Longitude = "unknow",
+                  Vote="0"
               });
         }
 
@@ -65,6 +66,15 @@ namespace FacebookLogin
             {
                 return database.Table<User>().
                   FirstOrDefault(customer => customer.Id == id);
+            }
+        }
+
+        public IEnumerable<User> GetLastUser()
+        {
+            lock (collisionLock)
+            {
+                return database.Query<User>(
+                  "SELECT LAST(USER)  FROM Item").AsEnumerable();
             }
         }
 

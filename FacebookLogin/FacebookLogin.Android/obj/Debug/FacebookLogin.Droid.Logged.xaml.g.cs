@@ -11,8 +11,7 @@
 namespace FacebookLogin {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Milly\\documents\\visual studio 2015\\Projects\\FacebookLogin\\FacebookLogin\\" +
-        "FacebookLogin\\Logged.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Milly\\Desktop\\IHM_MixYet\\FacebookLogin\\FacebookLogin\\Logged.xaml")]
     public partial class Logged : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

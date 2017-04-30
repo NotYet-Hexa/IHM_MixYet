@@ -11,8 +11,7 @@
 namespace FacebookLogin {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Milly\\documents\\visual studio 2015\\Projects\\FacebookLogin\\FacebookLogin\\" +
-        "FacebookLogin\\MusicHome.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Milly\\Desktop\\IHM_MixYet\\FacebookLogin\\FacebookLogin\\MusicHome.xaml")]
     public partial class MusicHome : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

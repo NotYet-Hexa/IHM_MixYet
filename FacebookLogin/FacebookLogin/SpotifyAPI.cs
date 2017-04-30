@@ -17,7 +17,6 @@ namespace FacebookLogin
         const string search_base = "v1/search?";
         const string query_base = "q=";
         const string type_base = "type=";
-
         const string offset_base = "offset=0&limit=10";
 
         public delegate void SpotifyEventHandler(object sender, SpotifyEvent e);
@@ -82,6 +81,8 @@ namespace FacebookLogin
         public string Thumbnail { get; set; }
         public string Album { get; set; }
         public string Artiste { get; set; }
+
+        public bool voted;
     }
 
     public class SpotifyEvent : EventArgs

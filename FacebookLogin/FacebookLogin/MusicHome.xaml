@@ -17,7 +17,7 @@
                 <RowDefinition Height="9*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <Image Grid.Row="1" Grid.Column="0" x:Name="return_im" Source="flecheGauche.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Image>
+            <Image Grid.Row="1" Grid.Column="0" x:Name="return_im" Source="flecheGauche.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
         </Grid>
         <Entry x:Name="search" Placeholder="Guthrie Govan"/>
         <ListView x:Name="list" ItemTapped="OnItemTapped"  HasUnevenRows="True" CachingStrategy="RecycleElement" SeparatorVisibility="Default">
@@ -26,15 +26,15 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout BackgroundColor="White"
-                Orientation="Horizontal">
+                Orientation="Horizontal" >
                             <Image Source="{Binding Thumbnail}"/>
                             <StackLayout Orientation="Vertical">
                                 <Label Text="{Binding Name}"
-                          TextColor="#C25800"/>
+                              TextColor="#C25800"/>
                                 <Label Text="{Binding Album}"
-                          TextColor="#AA6C39"/>
+                              TextColor="#AA6C39"/>
                                 <Label Text="{Binding Artiste}"
-                          TextColor="#9E7A5C" />
+                              TextColor="#9E7A5C" />
                             </StackLayout>
                         </StackLayout>
                     </ViewCell>

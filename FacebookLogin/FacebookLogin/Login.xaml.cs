@@ -89,8 +89,9 @@ namespace FacebookLogin
             connection = true;
             var userJson =  await httpClient.GetStringAsync(requestUrl);
             FacebookProfil fbprofil = new FacebookProfil(JObject.Parse(userJson));
-
+            // On doit vérifier que si le nom/prénom/id fb est le même qu'un des nom dans la DB on ne crée pas une nouvelle db 
             this.dataAccess = new UsersDataAccess();
+            //var users = this.dataAccess.GetLastUser(); //la requète SQL ça pas l'air de fonctionner
             User user = new User();
             user.UserInfo(fbprofil); // Met à jour la DB profil 
             this.dataAccess.SaveCustomer(user);
