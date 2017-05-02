@@ -40,19 +40,27 @@ namespace FacebookLogin
 
             if (action == "Voter")
             {
-                
-                //User user = dataAccess.GetUser(1);
-                User user = new User();
+
+                this.dataAccess = new UsersDataAccess();
+                User user = dataAccess.GetUser(1);
+
                 if (user.Vote=="0")//on vérifie si l'user à le droit de voter
                 {
+                    //TODO -> envoyer les données du vote à django 
                     var answer = await DisplayAlert("Attention",
                         "Vous allez voter pour : " + "\n" + dataMusic.Name + "\n" + "de " + dataMusic.Artiste + ".",
                         "Annuler", "Oui c'est bien ça");
                     if (answer)
                     {
-                        this.dataAccess = new UsersDataAccess();
-                        user.UserVote(dataMusic); // Met à jour la liste vote music 
+                        Tools tool = new Tools();
+                        string VoteTime = tool.GetCurrentTime();
                         user.Vote = "1";
+                        user.UserVote(dataMusic);
+                        user.TimeLastVote = VoteTime;
+
+                        //var jsonVote = tool.ObjectToJson(user); --> Envoie des data liés au vote de l'user 
+                        //await tool.SendData(jsonVote, "urlpourvote");
+
                         this.dataAccess.SaveCustomer(user);
                         await DisplayAlert("Information", "Votre vote a bien été pris en compte", "OK");
                     }

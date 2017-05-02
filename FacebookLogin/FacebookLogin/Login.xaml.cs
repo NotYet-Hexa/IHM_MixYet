@@ -14,6 +14,7 @@ namespace FacebookLogin
 	
 	public partial class Login : ContentPage
 	{
+        public Tools tools = new Tools();
         public bool connection = false;
         public string ClientId = "837022399788381";
         private UsersDataAccess dataAccess;
@@ -95,6 +96,10 @@ namespace FacebookLogin
             User user = new User();
             user.UserInfo(fbprofil); // Met à jour la DB profil 
             this.dataAccess.SaveCustomer(user);
+
+            //var jsonData = this.tools.ObjectToJson(user); // CONNECTION / INSCRIPTION 
+            // await this.tools.SendData(jsonData);
+
             await Navigation.PushModalAsync(new Logged(fbprofil));
         }
     }

@@ -16,6 +16,7 @@
       <DependentUpon>DisplayUserData.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Tools.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UsersDataAccess.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookProfil.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Geoloc.cs" />
@@ -81,5 +82,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Dictionary1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 </Project>

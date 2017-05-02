@@ -1,0 +1,11 @@
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.UWP\obj\x86\Debug\FacebookLogin.UWP.csprojResolveAssemblyReference.cache
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.UWP\obj\x86\Debug\App.g.i.cs
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.UWP\obj\x86\Debug\App.g.cs
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.UWP\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.UWP\obj\x86\Debug\MainPage.g.cs
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.UWP\obj\x86\Debug\App.xaml
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.UWP\obj\x86\Debug\MainPage.xaml
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.UWP\obj\x86\Debug\Dictionary1.xaml
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.UWP\obj\x86\Debug\App.xbf
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.UWP\obj\x86\Debug\MainPage.xbf
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.UWP\obj\x86\Debug\Dictionary1.xbf

@@ -33,16 +33,23 @@ namespace FacebookLogin
             // handle the tap  
             await DisplayAlert("Attention","Nous allons vous Géolocaliser","OK");
             Geoloc location = new Geoloc();
+            Tools tool = new Tools();
             try
             {
                 await location.getLatLon();
                 bool sucess = location.boSuccess;
                 var lat = location.latitude;
                 var lon = location.longitude;
+                string positionTime = tool.GetCurrentTime();
                 this.dataAccess = new UsersDataAccess();
                 User user = dataAccess.GetUser(1);
-                user.UserLocation(lat, lon); 
+                user.UserLocation(lat, lon);
+                user.TimeLastPosition = positionTime;
                 this.dataAccess.SaveCustomer(user);// met à jour la DB Location
+
+                //var jsonData = tool.ObjectToJson(user); --> envoie la position au seveur
+                //await tool.SendData(jsonData, "urlposition");
+
                 AlertPositionFound(lat, lon);
             }
             catch (Exception ex )

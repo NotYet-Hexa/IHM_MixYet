@@ -7,10 +7,12 @@ namespace FacebookLogin
     [Table("Users")]
     public  class User : INotifyPropertyChanged
     {
+        private string timeLastPosition,timeLastVote;
         private string vote = "0";
         private string firstname,lastname,age,gender,device; // Attribut pour les infos générales
         private string latitude, longitude; // Location de l'utilisateur
-        private List<SpotifyTrack> listeVote = new List<SpotifyTrack>(); // liste des votes pour éventuellement proposer de meilleures musiques
+        private string lastMusiqueVote; // Pour la DB 
+        private SpotifyTrack musicVote;
 
         public int _id;
         [PrimaryKey, AutoIncrement]
@@ -26,18 +28,19 @@ namespace FacebookLogin
                 OnPropertyChanged(nameof(Id));
             }
         }
-        //public List<SpotifyTrack> Listvote
-        //{
-        //    get
-        //    {
-        //        return listeVote;
-        //    }
-        //    set
-        //    {
-        //        this.listeVote = value;
-        //        OnPropertyChanged(nameof(Listvote));
-        //    }
-        //}
+
+        public string LastMusiqueVote
+        {
+            get
+            {
+                return lastMusiqueVote;
+            }
+            set
+            {
+                this.lastMusiqueVote = value;
+                OnPropertyChanged(nameof(LastMusiqueVote));
+            }
+        }
         
         [NotNull]
         public string Vote
@@ -52,6 +55,32 @@ namespace FacebookLogin
                 OnPropertyChanged(nameof(Vote));
             }
         }
+
+        public string TimeLastPosition
+        {
+            get
+            {
+                return timeLastPosition;
+            }
+            set
+            {
+                this.timeLastPosition = value;
+                OnPropertyChanged(nameof(TimeLastPosition));
+            }
+        }
+        public string TimeLastVote
+        {
+            get
+            {
+                return timeLastVote;
+            }
+            set
+            {
+                this.timeLastVote = value;
+                OnPropertyChanged(nameof(TimeLastVote));
+            }
+        }
+
         public string Latitude
         {
             get
@@ -176,12 +205,12 @@ namespace FacebookLogin
             this.latitude = Latitude;
             this.longitude = Longitude;
         }
-
-        public void UserVote(SpotifyTrack VotedMusic)
+        
+        public void UserVote(SpotifyTrack musicVoted)
         {
-            this.listeVote.Add(VotedMusic);
+            this.lastMusiqueVote = musicVoted.Name + "\n" + " de : " + musicVoted.Artiste;
+            this.musicVote = musicVoted;
         }
-
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string propertyName)
         {

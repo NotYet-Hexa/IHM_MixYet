@@ -35,6 +35,8 @@
                             <Label Text="{Binding Latitude}"/>
                             <Label Text="{Binding Longitude}"/>
                             <Label Text="{Binding Vote}"/>
+                            <Label Text="{Binding TimeLastPosition}"/>
+                            <Label Text="{Binding TimeLastVote}"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

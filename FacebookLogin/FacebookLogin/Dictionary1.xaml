@@ -1,0 +1,11 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FacebookLogin">
+
+    <Page.Resources>
+        <x:String x:Key="urlLocal">localhost:8000/MixTapeUser/login_event_json</x:String>
+    </Page.Resources>
+</ResourceDictionary>
+
+    

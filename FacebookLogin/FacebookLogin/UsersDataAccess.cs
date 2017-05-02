@@ -39,7 +39,9 @@ namespace FacebookLogin
                   Age = "20",
                   Latitude = "unknow",
                   Longitude = "unknow",
-                  Vote="0"
+                  Vote = "0",
+                  TimeLastPosition = "",
+                  TimeLastVote=""
               });
         }
 
