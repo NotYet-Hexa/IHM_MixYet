@@ -13,7 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookLogin.UWP", "Facebo
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		FacebookLogin\FacebookLogin\FacebookLogin.projitems*{0348db99-4623-4267-a9ef-32501c83d817}*SharedItemsImports = 4
 		FacebookLogin\FacebookLogin\FacebookLogin.projitems*{89ac6d58-9900-4dc2-82ba-5541dc6dd442}*SharedItemsImports = 4
 		FacebookLogin\FacebookLogin\FacebookLogin.projitems*{ba2f9cd1-1bf7-4996-8b0c-b8bf3cc0f45d}*SharedItemsImports = 4
 		FacebookLogin\FacebookLogin\FacebookLogin.projitems*{be9cf35a-b818-49ce-a928-954434101564}*SharedItemsImports = 13
