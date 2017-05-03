@@ -24,6 +24,10 @@ C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.dll
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Base.dll
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Basement.dll
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Gcm.dll
+C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Measurement.dll
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\android\assets\Java.Interop.dll
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\android\assets\Microsoft.CSharp.dll
 C:\Users\Milly\Desktop\IHM_MixYet\FacebookLogin\FacebookLogin.Android\obj\Debug\android\assets\Mono.Android.dll

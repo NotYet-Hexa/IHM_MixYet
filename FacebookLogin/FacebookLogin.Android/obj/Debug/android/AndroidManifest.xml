@@ -7,13 +7,34 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
   <application android:label="FacebookLogin.Android" android:name="md5372c0d4646d100fe08cc4da60cb434b3.MainApplication" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <service android:exported="false" android:name="md5372c0d4646d100fe08cc4da60cb434b3.MyGcmListenerService">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+      </intent-filter>
+    </service>
+    <service android:exported="false" android:name="md5372c0d4646d100fe08cc4da60cb434b3.MyInstanceIDListenerService">
+      <intent-filter>
+        <action android:name="com.google.android.gms.iid.InstanceID" />
+      </intent-filter>
+    </service>
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="FacebookLogin" android:theme="@style/MainTheme" android:name="md5372c0d4646d100fe08cc4da60cb434b3.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <service android:exported="false" android:name="md5372c0d4646d100fe08cc4da60cb434b3.RegistrationIntentService" />
+    <provider android:authorities="FacebookLogin.Android.google_measurement_service" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementContentProvider" />
+    <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService" />
+    <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+      <intent-filter>
+        <action android:name="com.google.android.gms.measurement.UPLOAD" />
+      </intent-filter>
+    </receiver>
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="FacebookLogin.Android.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
